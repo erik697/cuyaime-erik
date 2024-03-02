@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 const Header = ({ title }: { title: string }) => {
   const router = useRouter();
-  const handleBack = (event) => {
+  const handleBack = (event: any) => {
     event.preventDefault();
     router.back();
   };

@@ -1,12 +1,4 @@
-const Pagination = ({
-  page,
-  lastPage,
-  setPage,
-}: {
-  page: number;
-  lastPage: number;
-  setPage: any;
-}) => {
+const Pagination = ({ page, lastPage, setPage }) => {
   const scrollTop = () => {
     scrollTo({
       behavior: "smooth",

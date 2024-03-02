@@ -1,4 +1,4 @@
-export const getAnimeResponse = async (resource: string, query: string) => {
+export const getAnimeResponse = async (resource, query) => {
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_API_BASE_URL}/${resource}?${query}`
   );
@@ -6,15 +6,12 @@ export const getAnimeResponse = async (resource: string, query: string) => {
   return anime;
 };
 
-export const getNestedAnimeResponse = async (
-  resource: string,
-  objectProperty: any
-) => {
+export const getNestedAnimeResponse = async (resource, objectProperty) => {
   const response = await getAnimeResponse(resource);
-  return response.data.flatMap((item: any) => item[objectProperty]);
+  return response.data.flatMap((item) => item[objectProperty]);
 };
 
-export const reproduce = (data: any, gap: number) => {
+export const reproduce = (data, gap) => {
   const first = ~~(Math.random() * (data.length - gap) + 1);
   const last = first + gap;
 

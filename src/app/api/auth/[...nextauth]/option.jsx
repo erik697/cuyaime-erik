@@ -1,4 +1,4 @@
-import nextAuth from "next-auth";
+// import { authOptions } from "./option";
 import githubAuth from "next-auth/providers/github";
 
 export const authOption = {
@@ -10,7 +10,3 @@ export const authOption = {
   ],
   secret: process.env.NEXTAUTH_SECRET,
 };
-
-const handler = nextAuth(authOption);
-
-export { handler as GET, handler as POST };

@@ -38,7 +38,7 @@ const Page = async () => {
       </section>
       {/* anime rekomendasi */}
       <section>
-        <Header title="Rekomendasi" />
+        <Header title="Rekomendasi" linkTitle="" linkHref="" />
         <Animelist api={recommendedAnime} />
       </section>
     </>

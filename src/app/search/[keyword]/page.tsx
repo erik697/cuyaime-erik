@@ -16,7 +16,11 @@ const Page = async ({ params }: { params: any }) => {
     <>
       {/* anime terpopuler */}
       <section>
-        <Header title={`Pencarian Untuk ${decodedKeyword}...`} />
+        <Header
+          title={`Pencarian Untuk ${decodedKeyword}...`}
+          linkTitle=""
+          linkHref=""
+        />
         <Animelist api={searchAnime} />
       </section>
     </>

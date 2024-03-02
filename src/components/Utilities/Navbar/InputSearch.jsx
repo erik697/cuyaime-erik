@@ -6,7 +6,7 @@ import React, { useEffect, useRef } from "react";
 const InputSearch = () => {
   const searchRef = useRef();
   const router = useRouter();
-  const handleSearch = (event: any) => {
+  const handleSearch = (event) => {
     if (event.key === "Enter" || event.type === "click") {
       if (
         searchRef.current.value != "" &&

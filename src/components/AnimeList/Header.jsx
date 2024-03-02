@@ -1,14 +1,6 @@
 import Link from "next/link";
 
-const Header = ({
-  title,
-  linkHref,
-  linkTitle,
-}: {
-  title: string;
-  linkHref: string;
-  linkTitle: string;
-}) => {
+const Header = ({ title, linkHref, linkTitle }) => {
   return (
     <div className="p-4 flex justify-between items-center">
       <h1 className="text-2xl font-bold text-color-primary">{title}</h1>
