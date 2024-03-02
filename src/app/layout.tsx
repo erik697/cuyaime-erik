@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Gabarito } from "next/font/google";
+// import { Gabarito } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Utilities/Navbar";
 
-const gabarito = Gabarito({ subsets: ["latin"] });
+// const gabarito = Gabarito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "CuyAnimeList",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${gabarito.className} bg-color-dark`}>
+      <body className={` bg-color-dark`}>
         <Navbar />
         {children}
       </body>
